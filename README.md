@@ -1,3 +1,3 @@
 # Experimentation
 
-Learning Python 3 by myself.
+Learning Python 3 and Git by myself.
