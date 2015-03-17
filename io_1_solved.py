@@ -1,32 +1,15 @@
-#!/usr/bin/python
-#Your optional code here
-	#You can import some modules or create additional functions
+x = []
+count = 0
+suma = 0
 
+while True:
+	a=input("Enter a number or Enter to finish: ")
+	if a.isdigit():
+		x.append(int(a))
+		count +=1
+		suma += int(a)
 
-	def checkio(data):
-		y = []
-
-		for i in data:
-			y.append(i)
-		data.clear()
-		for a in y:
-			if y.count(a)>1:
-				data.append(a)
-		print(data)
-
-		return data
-
-	#Some hints
-	#You can use list.count(element) method for counting.
-	#Create new list with non-unique elements
-	#Loop over original list
-
-
-	if __name__ == "__main__":
-		#These "asserts" using only for self-checking and not necessary for auto-testing
-		assert isinstance(checkio([1]), list), "The result must be a list"
-		assert checkio([1, 2, 3, 1, 3]) == [1, 3, 1, 3], "1st example"
-		assert checkio([1, 2, 3, 4, 5]) == [], "2nd example"
-		assert checkio([5, 5, 5, 5, 5]) == [5, 5, 5, 5, 5], "3rd example"
-		assert checkio([10, 9, 10, 10, 9, 8]) == [10, 9, 10, 10, 9], "4th example"
-
+	else:
+		print("------------------------------------"'\n'+"You entered:",x)
+		print("total = ",count,",", "suma = ",suma,",","maximum = ",max(x),",","minimum = ",min(x))	
+		break
