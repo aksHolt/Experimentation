@@ -16,6 +16,5 @@ while True:
 			print("      Total = ",count,",", "sum = ",suma,",","maximum = ",max(x),",","minimum = ",min(x))	
 			break
 		else:
-			x.append(count)
 			print("You not enter any number. Program aborted.")
 			break
