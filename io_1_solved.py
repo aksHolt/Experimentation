@@ -8,8 +8,14 @@ while True:
 		x.append(int(a))
 		count +=1
 		suma += int(a)
-
+	elif a.isalpha():
+		continue
 	else:
-		print("------------------------------------"'\n'+"You entered:",x)
-		print("total = ",count,",", "suma = ",suma,",","maximum = ",max(x),",","minimum = ",min(x))	
-		break
+		if len(x) > 0:
+			print("      --------------------------------"+'\n'+"      You entered:",x)
+			print("      Total = ",count,",", "sum = ",suma,",","maximum = ",max(x),",","minimum = ",min(x))	
+			break
+		else:
+			x.append(count)
+			print("You not enter any number. Program aborted.")
+			break
